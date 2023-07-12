@@ -1,5 +1,4 @@
 <h1><u><b>Healthcare Fraud Detection Analysis<b></u></h1>
-![Healthcare Fraud](<medicare fraud-1.jpg>)
 
 <p>This project aims to develop a robust system that leverages advanced machine learning algorithms to accurately identify and flag potential fraudulent activities in healthcare claims.</p>
 
@@ -65,12 +64,14 @@ To use the project, follow these steps:
 
 
 ## Project Contributors
-[Sharon Chelangat](https://github.com/Chelangat-sharon) 
-[Kinoti Martin](https://github.com/kinoti-m-martin) 
-[Peter Onsomu](https://github.com/pkonsomu2020)
-[Swaleh Mwadime](https://github.com/swalehmwadime) 
-[Victoria Nabea](https://github.com/VikkieN)
-[Edwin Nderitu](https://github.com/Eddie-254)
+<ul>
+<li>[Sharon Chelangat](https://github.com/Chelangat-sharon)</li> 
+<li>[Kinoti Martin](https://github.com/kinoti-m-martin)</li>
+<li>[Peter Onsomu](https://github.com/pkonsomu2020)</li>
+<li>[Swaleh Mwadime](https://github.com/swalehmwadime)</li> 
+<li>[Victoria Nabea](https://github.com/VikkieN)</li>
+<li>[Edwin Nderitu](https://github.com/Eddie-254)</li>
+</ul>
 
 *** Feel free to contribute to the project by opening issues or submitting pull requests.
 
