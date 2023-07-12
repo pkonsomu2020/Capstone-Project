@@ -29,7 +29,7 @@ The following technologies are used in this project:
 <li>Seaborn</li>
 </ol>
 
-## Project Installation Instructions
+## <u>Project Installation Instructions </u>
 
 To install the project, you will need to have Anaconda installed. Once you have Anaconda installed, you can create a virtual environment.
 
