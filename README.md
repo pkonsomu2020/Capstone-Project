@@ -1,5 +1,7 @@
 <h1><u><b>Healthcare Fraud Detection Analysis<b></u></h1>
-![fraud](https://github.com/Eddie-254/Capstone-Project/assets/40391537/2246010c-eea0-4258-8a2e-8a7b4833c011)
+![Medicare Fraud](<medicare fraud.jpg>)
+
+
 
 <p>This project aims to develop a robust system that leverages advanced machine learning algorithms to accurately identify and flag potential fraudulent activities in healthcare claims.</p>
 
