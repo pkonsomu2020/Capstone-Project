@@ -1,7 +1,4 @@
 <h1><u><b>Healthcare Fraud Detection Analysis<b></u></h1>
-![Medicare Fraud](<medicare fraud.jpg>)
-
-
 
 <p>This project aims to develop a robust system that leverages advanced machine learning algorithms to accurately identify and flag potential fraudulent activities in healthcare claims.</p>
 
