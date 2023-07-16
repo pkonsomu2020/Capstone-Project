@@ -1,4 +1,4 @@
-<h1><u><b>Healthcare Fraud Detection Analysis<b></u></h1>
+### `Healthcare Fraud Detection Analysis`
 
 <p>This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.</p>
 
