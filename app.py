@@ -102,8 +102,6 @@ def preprocess_data(df):
     
     return df
 
-import matplotlib.pyplot as plt
-import pandas as pd
 
 def plot_fraud_chart(predictions):
     st.subheader("Fraudulent Claims Percentage (Pie Chart)")
