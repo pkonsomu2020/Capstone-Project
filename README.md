@@ -1,36 +1,26 @@
 <h1><u><b>Healthcare Fraud Detection Analysis<b></u></h1>
 
+<p>This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.</p>
+
 <img src="medicare fraud-1.jpg" />
 
-<p>This project aims to develop a robust system that leverages advanced machine learning algorithms to accurately identify and flag potential fraudulent activities in healthcare claims.</p>
+<h2><u><b>Business Understanding</b></u></h2>
+<p>Healthcare fraud is a significant challenge globally, resulting in financial losses, compromised patient care, and reduced trust in the healthcare system. Detecting fraudulent activities manually is time-consuming and prone to errors.Therefore, an automated fraud detection system is needed to enhance transparency, accountability, and financial sustainability in healthcare.<p>
 
 
-## Project Description
-This project uses a variety of machine learning algorithms to train models that can identify fraudulent healthcare claims. The models are trained on a dataset of historical healthcare claims data and publicly available data sources. The models are evaluated on their ability to identify fraudulent claims, and the performance of the models is reported using a variety of metrics.
-
-## Project Goals
-The goals of this project are to:
-<ul>
-<li>Develop a robust system for detecting healthcare fraud</li>
-<li>Identify fraudulent patterns in healthcare data</li>
-<li>Provide actionable insights that can be used to prevent fraud</li>
-<li>Facilitate decision-making processes related to fraud detection</li>
-</ul>
+<h2><u><b>Data Understanding</b><u></h2>
+The project utilizes a comprehensive dataset obtained from Kaggle.The dataset contains information such as provider details, patient demographics, medical procedures, and billing information. Exploratory data analysis (EDA) is performed to gain insights into the dataset and identify patterns related to fraudulent activities. Visualizations are used to present the distribution of fraud cases, correlations between variables, and other relevant insights.
 
 
-## Project Technology Stack
-The following technologies are used in this project:
-<ol>
-<li>Python</li>
-<li>NumPy</li>
-<li>Pandas</li>
-<li>Scikit-learn</li>
-<li>sklearn</li>
-<li>Matplotlib</li>
-<li>Seaborn</li>
-</ol>
+<h2><u><b>Modeling and Evaluation</b><u></h2>
 
-## <u>Project Installation Instructions </u>
+<p>The project employs several machine learning algorithms to detect healthcare provider fraud, including <i>KNN (K-Nearest Neighbors), Decision Tree, SVM (Support Vector Machine), Gradient Boost, Logistic Regression, and XGBoost classifiers</i>. Each classifier is trained on the dataset and evaluated using various metrics such as AUC score, recall rate, precision, and F1 score. The final model, Grid Search Random Forest, combines the predictions of multiple classifiers to enhance overall fraud detection performance.</p>
+
+<p>The performance of the final model is compared to a baseline model, which represents the accuracy achieved by traditional manual detection methods. The final model significantly outperforms the baseline, demonstrating its effectiveness in identifying fraudulent activities in healthcare providers.</p>
+
+
+
+<h2><u><b>Project Installation Instructions</b></u><h2>
 
 To install the project, you will need to have Anaconda installed. Once you have Anaconda installed, you can create a virtual environment.
 
@@ -47,7 +37,7 @@ Please refer to this documentation:
 - [macOS Installation Guide](https://github.com/learn-co-curriculum/dsc-data-science-env-mac-installation.git)
 
 
-### 2. Create a Virtual Environment
+''' 2. Create a Virtual Environment
 
 Once Anaconda is installed, you can create a virtual environment by following the instructions in the repository:
 
@@ -64,16 +54,18 @@ To use the project, follow these steps:
 - Open the project notebooks: HealthCare_cleaning& EDA.ipynb, HealthCare_modelling.ipynb
 - Follow the instructions in the notebook to run the project and analyze the results.
 
+### Acknowledgments
+We would like to acknowledge the contributions of the following Data Scientists:
+<ol>
+<li><a href="https://github.com/Chelangat-sharon">Sharon Chelangat</a></li>
+<li><a href="https://github.com/kinoti-m-martin">Kinoti Martin</a></li>
+<li><a href="https://github.com/pkonsomu2020">Peter Onsomu</a></li>
+<li><a href="https://github.com/swalehmwadime">Swaleh Mwadime</a></li>
+<li><a href="https://github.com/VikkieN">Victoria Nabea</a></li>
+<li><a href="https://github.com/Eddie-254">Edwin Nderitu</a></li>
 
-## Project Contributors
-<ul>
-<li>[Sharon Chelangat](https://github.com/Chelangat-sharon)</li> 
-<li>[Kinoti Martin](https://github.com/kinoti-m-martin)</li>
-<li>[Peter Onsomu](https://github.com/pkonsomu2020)</li>
-<li>[Swaleh Mwadime](https://github.com/swalehmwadime)</li> 
-<li>[Victoria Nabea](https://github.com/VikkieN)</li>
-<li>[Edwin Nderitu](https://github.com/Eddie-254)</li>
-</ul>
+</ol>
 
-*** Feel free to contribute to the project by opening issues or submitting pull requests.
+<p>Feel free to contribute to the <a href="https://github.com/Eddie-254/Capstone-Project.git">project</a>
+ by opening issues or submitting pull requests.</p>
 
