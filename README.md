@@ -15,7 +15,7 @@ The project utilizes a comprehensive dataset obtained from Kaggle. The dataset c
 
 ## Modeling and Evaluation
 
-The project employs several machine learning algorithms to detect healthcare provider fraud, including KNN (K-Nearest Neighbors), Decision Tree, SVM (Support Vector Machine), Gradient Boost, Logistic Regression, and XGBoost classifiers. Each classifier is trained on the dataset and evaluated using various metrics such as AUC score, recall rate, precision, and F1 score. The final model, Grid Search Random Forest, combines the predictions of multiple classifiers to enhance overall fraud detection performance.
+The project employs several machine learning algorithms to detect healthcare provider fraud, including KNN (K-Nearest Neighbors), Decision Tree, SVM (Support Vector Machine), Gradient Boost, Logistic Regression,random forest and XGBoost classifiers. Each classifier is trained on the dataset and evaluated using various metrics such as AUC score, recall rate, precision, and F1 score. The final model, Grid Search Random Forest, combines the predictions of multiple classifiers to enhance overall fraud detection performance.
 
 The performance of the final model is compared to a baseline model, which represents the accuracy achieved by traditional manual detection methods. The final model significantly outperforms the baseline, demonstrating its effectiveness in identifying fraudulent activities in healthcare providers.
 
