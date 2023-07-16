@@ -32,7 +32,7 @@ The healthcare provider fraud detection system developed in this project offers 
 
 - Privacy and Compliance: Adhere to privacy regulations, implement data security measures, and establish consent frameworks to protect patient information while enabling effective fraud detection.
 
--Address False Positives and False Negatives: Continuously refine fraud detection algorithms to minimize both false positives and false negatives, incorporating feedback from investigators and subject matter experts.
+- Address False Positives and False Negatives: Continuously refine fraud detection algorithms to minimize both false positives and false negatives, incorporating feedback from investigators and subject matter experts.
 
 - Establish Quality Control Measures: Implement robust quality control processes, including double-checking data entries, conducting regular model performance reviews, and establishing peer review mechanisms for accuracy and reliability.
 
