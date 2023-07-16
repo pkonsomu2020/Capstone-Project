@@ -1,8 +1,9 @@
 # Healthcare Fraud Detection Analysis
+![meddd](https://github.com/Eddie-254/Capstone-Project/assets/40391537/a8cefee7-d0e0-4f11-a6e9-8ee7cc0c6e6a)
 
 This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.
 
-![Medicare Fraud](medicare fraud.jpg)
+
 
 ## Business Understanding
 
