@@ -2,7 +2,7 @@
 
 This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.
 
-![Medicare Fraud](medicare_fraud.jpg)
+![Medicare Fraud](medicare_fraud-1.jpg)
 
 ## Business Understanding
 
