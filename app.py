@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 import warnings
+import base64
 warnings.filterwarnings("ignore")
+
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main():
