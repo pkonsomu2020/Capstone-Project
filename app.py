@@ -16,6 +16,20 @@ def main():
    """ 
     # Render the HTML content
     st.markdown(html_temp, unsafe_allow_html=True)
+    st.markdown("""
+    Welcome to our Healthcare Insurance Fraud Detection App! This interactive web application utilizes the power of machine learning to detect fraudulent claims in your insurance data.
+    """)
+
+    st.header("How to Use the App")
+
+    st.markdown("""
+    1. **Upload CSV File:** To get started, upload your claims batch file in CSV format by clicking the "Browse Files" button. The app will automatically process the data and perform fraud detection analysis.
+
+    2. **Flagged Claims Table:** Once the data is processed, the "Flagged Claims" table will display the detected fraudulent claims along with relevant information. You can explore the details of each flagged claim, such as policy numbers, claim amounts, and timestamps.
+
+    3. **Download for Investigation:** If you need further investigation, you can download the "Flagged Claims" table in CSV format by clicking the "Download" button. This will allow you to conduct a more in-depth analysis offline.
+    """)
+
     
     # Upload CSV file
     uploaded_file = st.file_uploader("Upload CSV file", type="csv")
@@ -46,17 +60,18 @@ def main():
         #st.write(predictions)
         
         # Display the fraudulent activity count and percentage
-        st.write("Fraudulent Activities:")
-        st.write("Count:", fraud_count)
-        st.write("Percentage:", fraud_percentage, "%")
+        st.header("File Results:")
+        st.markdown("<span style='font-size: 24px;'><b>Count:</b></span> <span style='font-size: 24px;'>{}</span>".format(fraud_count), unsafe_allow_html=True)
+        st.markdown("<span style='font-size: 24px;'><b>Percentage:</b></span> <span style='font-size: 24px;'>{:.2f}%</span>".format(fraud_percentage), unsafe_allow_html=True)
+
         
         # Get the rows with fraudulent activities
         fraud_rows = df.loc[predictions == 1, :]
         fraud_rows["PotentialFraud"] = 1
-        
+
         # Display the fraudulent rows
         if not fraud_rows.empty:
-            st.write("Fraudulent Rows:")
+            st.header("Flagged Claims:")
             st.dataframe(fraud_rows)
         else:
             st.write("No fraudulent activities detected.")
@@ -91,6 +106,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 def plot_fraud_chart(predictions):
+    st.subheader("Fraudulent Claims Percentage (Pie Chart)")
+
+    st.markdown("""
+    The pie chart visually represents the percentage of fraudulent claims detected in the uploaded data. It provides an overview of the overall extent of potential fraudulent activities within the claims batch.
+    """)
+
     # Create a DataFrame for plotting
     df = pd.DataFrame(predictions, columns=["Fraudulent"])
     
@@ -109,6 +130,13 @@ def plot_fraud_chart(predictions):
     plt.title("Fraudulent Activities")
     st.pyplot()
 
+    st.markdown("""
+        ### Disclaimer
 
+        Please note that the accuracy of fraud detection may vary depending on the quality and quantity of data provided. Our machine learning model aims to identify potential fraudulent claims, but it is essential to conduct thorough investigations to confirm fraud cases.
+
+        For any questions or assistance, please feel free to contact our support team. We hope this app helps you in safeguarding against healthcare insurance fraud.
+        """)
+    
 if __name__ == "__main__":
     main()
