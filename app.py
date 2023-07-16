@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 import warnings
-import base64
 warnings.filterwarnings("ignore")
 st.set_option('deprecation.showPyplotGlobalUse', False)
-
 
 def main():
     # st.title('Healthcare Provider Fraud Detector')
@@ -44,8 +42,15 @@ def main():
         processed_data = preprocess_data(df)
         
         # Load the trained model
-        with open('xgboost_model_reduced_features.pkl', 'rb') as file:
+        with open('random_forest_model.pkl', 'rb') as file:
             model = pickle.load(file)
+        
+        # Adjust the number of features in the processed data
+        processed_data = adjust_features(processed_data, model)
+        
+        if processed_data is None:
+            st.error("Error: The number of features in the model does not match the processed data.")
+            return
         
         # Make predictions
         predictions = model.predict(processed_data)
@@ -75,12 +80,6 @@ def main():
         if not fraud_rows.empty:
             st.header("Flagged Claims:")
             st.dataframe(fraud_rows)
-
-            # Add a button to download the flagged claims DataFrame as a CSV file
-            if st.button("Download Flagged Claims"):
-                # Create a link to download the DataFrame as a CSV file
-                tmp_download_link = download_link(fraud_rows, "flagged_claims.csv", "Click here to download the flagged claims!")
-                st.markdown(tmp_download_link, unsafe_allow_html=True)
         else:
             st.write("No fraudulent activities detected.")
 
@@ -106,10 +105,28 @@ def preprocess_data(df):
         le = LabelEncoder()
         df[col] = le.fit_transform(df[col])
     
-    # Apply feature scaling if required
+    # Drop any unnecessary columns if required
     
     return df
 
+def adjust_features(data, model):
+    expected_features = len(model.feature_importances_)
+    current_features = data.shape[1]
+
+    if current_features != expected_features:
+        if current_features > expected_features:
+            # Remove excess features
+            data = data.iloc[:, :expected_features]
+        else:
+            # Add missing features
+            missing_features = expected_features - current_features
+            dummy_features = pd.DataFrame([[0] * missing_features], columns=["DummyFeature" + str(i+1) for i in range(missing_features)])
+            data = pd.concat([data, dummy_features], axis=1)
+
+    return data
+
+import matplotlib.pyplot as plt
+import pandas as pd
 
 def plot_fraud_chart(predictions):
     st.subheader("Fraudulent Claims Percentage (Pie Chart)")
@@ -143,11 +160,6 @@ def plot_fraud_chart(predictions):
 
         For any questions or assistance, please feel free to contact our support team. We hope this app helps you in safeguarding against healthcare insurance fraud.
         """)
-def download_link(df, file_name, link_text):
-    csv = df.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode()).decode()
-    href = f'<a href="data:file/csv;base64,{b64}" download="{file_name}">{link_text}</a>'
-    return href
     
 if __name__ == "__main__":
     main()
