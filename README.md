@@ -27,8 +27,7 @@ The healthcare provider fraud detection system developed in this project offers 
 
 <h2><u><b>Project Installation Instructions</b></u><h2>
 
-To install the project, you will need to have Anaconda installed. Once you have Anaconda installed, you can create a virtual environment.
-
+To install the project, you will need to have Anaconda installed. Then you can proceed to creating a virtual environment.
 
 To set up the project environment, follow the steps below:
 
