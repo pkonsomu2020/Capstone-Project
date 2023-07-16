@@ -18,6 +18,11 @@ The project utilizes a comprehensive dataset obtained from Kaggle.The dataset co
 
 <p>The performance of the final model is compared to a baseline model, which represents the accuracy achieved by traditional manual detection methods. The final model significantly outperforms the baseline, demonstrating its effectiveness in identifying fraudulent activities in healthcare providers.</p>
 
+## Conclusion
+The healthcare provider fraud detection system developed in this project offers an effective and reliable solution to combat fraud within the healthcare industry. By harnessing the power of machine learning algorithms and advanced techniques, the system enhances transparency, improves patient care, and safeguards the financial integrity of healthcare organizations. Its implementation can assist insurance companies, government agencies, and healthcare providers in detecting and preventing fraudulent activities, leading to substantial cost savings and upholding the trust and credibility of the healthcare system.
+
+
+
 
 
 <h2><u><b>Project Installation Instructions</b></u><h2>
@@ -44,8 +49,7 @@ Once Anaconda is installed, you can create a virtual environment by following th
 - [Creating a Virtual Environment](https://github.com/learn-co-curriculum/dsc-data-science-env-config.git)
 
 
-
-## Project Usage Instructions
+## Repository Navigation
 To use the project, follow these steps:
 
 - Fork and Clone the repository: git clone https://github.com/Eddie-254/Capstone-Project.git
@@ -53,6 +57,7 @@ To use the project, follow these steps:
 - Launch Jupyter Notebook(from anaconda): jupyter notebook
 - Open the project notebooks: HealthCare_cleaning& EDA.ipynb, HealthCare_modelling.ipynb
 - Follow the instructions in the notebook to run the project and analyze the results.
+
 
 ### Acknowledgments
 We would like to acknowledge the contributions of the following Data Scientists:
@@ -67,5 +72,5 @@ We would like to acknowledge the contributions of the following Data Scientists:
 </ol>
 
 <p>Feel free to contribute to the <a href="https://github.com/Eddie-254/Capstone-Project.git">project</a>
- by opening issues or submitting pull requests.</p>
+by opening issues or submitting pull requests.</p>
 
