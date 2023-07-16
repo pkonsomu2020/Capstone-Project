@@ -80,6 +80,12 @@ def main():
         if not fraud_rows.empty:
             st.header("Flagged Claims:")
             st.dataframe(fraud_rows)
+
+            # Add a button to download the flagged claims DataFrame as a CSV file
+            if st.button("Download Flagged Claims"):
+                # Create a link to download the DataFrame as a CSV file
+                tmp_download_link = download_link(fraud_rows, "flagged_claims.csv", "Click here to download the flagged claims!")
+                st.markdown(tmp_download_link, unsafe_allow_html=True)
         else:
             st.write("No fraudulent activities detected.")
 
@@ -160,6 +166,11 @@ def plot_fraud_chart(predictions):
 
         For any questions or assistance, please feel free to contact our support team. We hope this app helps you in safeguarding against healthcare insurance fraud.
         """)
-    
+def download_link(df, file_name, link_text):
+    csv = df.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()
+    href = f'<a href="data:file/csv;base64,{b64}" download="{file_name}">{link_text}</a>'
+    return href
+
 if __name__ == "__main__":
     main()
