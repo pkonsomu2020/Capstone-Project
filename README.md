@@ -1,11 +1,19 @@
 # Capstone-Project
 
 ## Healthcare Fraud Detection Analysis
+<<<<<<< HEAD
 
 ![Medicare Fraud](./medicarefraud.jpeg)
 
 This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.
 
+=======
+
+![Medicare Fraud](./medicarefraud.jpeg)
+
+This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry. You can find this project [here](https://capstone-project-fraudguard.streamlit.app/)
+
+>>>>>>> 09fa74f729de0fca3e71a982c13157d8e07a6f08
 ## Business Understanding
 
 Healthcare fraud is a significant challenge globally, resulting in financial losses, compromised patient care, and reduced trust in the healthcare system. Detecting fraudulent activities manually is time-consuming and prone to errors. Therefore, an automated fraud detection system is needed to enhance transparency, accountability, and financial sustainability in healthcare.
