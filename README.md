@@ -9,7 +9,7 @@ This project aims to develop an accurate and precise healthcare provider fraud d
 
 ![Medicare Fraud](./medicarefraud.jpeg)
 
-This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry. You can find this project [here](https://capstone-project-fraudguard.streamlit.app/)
+This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry. You can find this project [here](https://healthcare-frauddetection.streamlit.app/)
 
 ## Business Understanding
 
