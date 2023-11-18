@@ -1,11 +1,10 @@
 # Capstone-Project
 
 ## Healthcare Fraud Detection Analysis
-![meddd](C:\Users\Peter\Downloads\Flatiron\Capstone-Project\medicarefraud.jpeg)
+
+![Medicare Fraud](./medicarefraud.jpeg)
 
 This project aims to develop an accurate and precise healthcare provider fraud detection system using machine learning algorithms. The system analyzes healthcare data to identify fraudulent activities and promote integrity within the healthcare industry.
-
-
 
 ## Business Understanding
 
